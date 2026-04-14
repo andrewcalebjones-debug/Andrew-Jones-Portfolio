@@ -1,0 +1,47 @@
+body {
+    background-color: antiquewhite;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+fieldset {
+    margin-top: 25px;
+    border-style: double;
+    border-color: black;
+}
+
+canvas {
+    display: block;
+    border-style: double;
+    border-color: aquamarine;
+    background-color: black;
+
+}
+
+h1 {
+    font-size: 70px;
+    margin: auto;
+}
+
+p {
+    margin: auto;
+    font-size: 20px;
+}
+
+.button {
+    font-size: 15px;
+    color: aquamarine;
+    border-style: double;
+    border-color: aquamarine;
+    background-color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.button:hover {
+    color: white;
+    border-color: white;
+}

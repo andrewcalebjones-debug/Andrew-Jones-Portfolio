@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #gameBoard {
+                width: 500px;
+                height: 500px;
+                border-style: solid;
+            }
+
+            #gamePiece {
+                width: 20px;
+                height: 20px;
+                background-color: black;
+                position: relative;
+                top: 230px;
+                left: 230px;
+            }
+
+            #mouse {
+                width: 20px;
+                height: 20px;
+                background-color:grey;
+                position: relative;
+                top: 230px;
+                left: 230px;
+            }
+
+            #cat {
+                width: 20px;
+                height: 20px;
+                background-color: orange;
+                position: relative;
+                top: 230px;
+                left: 230px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Moving Things Around....</h1>
+        <div id="gameBoard">
+            <div id="gamePiece"></div>
+            <div id="mouse"></div>
+            <div id="cat"></div>
+        </div>
+        <form>
+            <input type="button" value="Left" onclick="mLeft()">
+            <input type="button" value="Up" onclick="mUp()">
+            <input type="button" value="Down" onclick="mDown()">
+            <input type="button" value="Right" onclick="mRight()">
+        </form>
+        <script>
+            //An event listener
+            document.addEventListener('keypress',move);
+            document.getElementById('gameBoard').addEventListener('mousemove', myMouse);
+            function move(e) {
+                //alert(e.charCode);
+                //w=119 a=97 s=115 d=100
+                //W=87 A=65 S=83 D=68
+                switch(e.charCode){
+                    case 119: //w
+                        mUp();
+                        break;
+                    case 97: //a
+                        mLeft();
+                        break;
+                    case 115: //s
+                        mDown();
+                        break;
+                    case 100: //d
+                        mRight()
+                        break;
+
+                    case 87: //W
+                        mUp();
+                        mUp();
+                        mUp();
+                        break;
+                    case 65: //A
+                        mLeft();
+                        mLeft();
+                        mLeft();
+                        break;
+                    case 83: //S
+                        mDown();
+                        mDown();
+                        mDown();
+                        break;
+                    case 68: //D
+                        mRight();
+                        mRight();
+                        mRight();
+                        break;
+                }
+            }
+
+            function myMouse(e) {
+                //alert(e.clientY);
+                //put the mouse wherever the pointer is
+                var mouse=document.getElementById("mouse");
+                var mouseX=e.clientX-20, mouseY=e.clientY-110;
+                if (mouseX > 510) {
+                    mouseX = 510;
+                } else if ( mouseX < 10) {
+                    mouseX = 10;
+                }
+
+                if (mouseY > 430) {
+                    mouseY = 430;
+                } else if (catY < -50) {
+                    catY = -50;
+                }
+                mouse.style.left = (mouseX) + "px";
+                mouse.style.top = (mouseY) + "px";
+
+                //keep the mouse in in box
+
+                //make the cat chase the mouse
+                //Compare the position of the cat to the mouse 
+                //move the cat up or down left or right toward the mouse
+                var cat=document.getElementById("cat");
+                var catTop = window.getComputedStyle(cat,null).getPropertyValue("top"); //gets top style value from our CSS
+                var catLeft = window.getComputedStyle(cat,null).getPropertyValue("left"); //gets left style value from our CSS
+                var catX = Number(catLeft.substr(0,catLeft.length-2));//gets rid of the "px"
+                var catY = Number(catTop.substr(0,catTop.length-2));//gets rid of the "px"
+                if (catX > mouseX && mouseX < 520) {
+                    catX -= 3;
+                } else {
+                    catX += 3;
+                }
+                if (catY > mouseY) {
+                    catY -= 3;
+                } else {
+                    catY += 3;
+                }
+
+                //keep the cat in the box
+                //X
+                if (catX > 480) {
+                    catX = 480;
+                } else if (catX < 0) {
+                    catX = 0;
+                }
+
+                //Y
+                if (catY > 440) {
+                    catY = 440;
+                } else if (catY < -40) {
+                    catY = -40;
+                }
+                //actually move the cat. We have only calculated at this point
+                cat.style.top = catY + "px";
+                cat.style.left = catX + "px";
+            }
+        </script>
+    </body>
+    <script>
+        //Variables to keep track of the gamepiece and its location
+        var x=230, y=230;
+        var gp=document.getElementById("gamePiece"); //references our gamepiece
+        //functions to move rectangle
+        function mLeft() {
+            x -= 10; //reduce x by 5
+            //check if the piece has left the board. If so, return it to the board
+            if (x<0) {
+                x = 0;
+            }
+
+            //update location of gamepeice
+            gp.style.left = x+"px";
+        }
+        function mUp() {
+            y -= 10;
+
+            if (y<0) {
+                y = 0;
+            }
+
+            gp.style.top = y+"px";
+        }
+        function mDown() {
+            y += 10;
+
+            if (y>480) {
+                y = 480;
+            }
+
+            gp.style.top = y+"px";
+        }
+        function mRight() {
+             x += 10; 
+            if (x>480) {
+                x = 480;
+            }
+
+            gp.style.left = x+"px";
+        }
+    </script>
+</html>

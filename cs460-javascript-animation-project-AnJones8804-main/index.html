@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- 
+    Animation lab (c) 2026 by Andrew Jones - Emmaus University
+    anjones@emmaus.edu
+  -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(Andrew Jones) Animation Lab</title>
+    <style>
+        body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; background: #f0f0f0; }
+        canvas { background: white; border: 2px solid #333; box-shadow: 0 8px 16px rgba(0,0,0,0.1); }
+        #digital-clock { font-size: 2rem; margin: 10px; font-family: 'Courier New', Courier, monospace; }
+    </style>
+</head>
+<body>
+
+    <h1>Canvas Clock Lab - (c) 2026 by Andrew Jones</h1>
+    
+    <div id="digital-clock">00:00:00</div>
+
+  <!-- this will display an analog clock -->
+    <canvas id="clockCanvas" width="400" height="400"></canvas>
+
+  <!-- you will be doing more animation with this next canvas -->
+    <canvas id="animationCanvas" width="600" height="400"></canvas>
+    <label for"ElXVel">X Velocity:</label>
+    <input type="number" id="ElXVel" oninput="setVelocity()" value=1>
+    <label for"ElYVel">Y Velocity:</label>
+    <input type="number" id="ElYVel" oninput="setVelocity()" value=1>
+
+    <script src="script.js"></script>
+</body>
+</html>

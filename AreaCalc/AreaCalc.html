@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="AreaCalc.css">
+</head>
+
+<body>
+    <h1>Area Calculator</h1>
+    <p>A simple website calculating the area of simple shapes</p>
+    <form>
+        <fieldset>
+            <legend>Circle:</legend> <!--Group box-->
+            <p>Enter the radius or diameter, then press submit</p>
+            Radius: &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="radius" onkeyup="fixDia()"><br>
+            Diameter: <input type="text" id="diameter" onkeyup="fixRad()"><br>
+            <input type="button" value="Calculate Area" onclick="CalcArea(1)"class="button"><br>
+            Area: <span id="circleArea"></span>
+            <canvas width="150px" height="150" id="cirCanvas"></canvas>
+        </fieldset>
+
+        <fieldset>
+            <legend>Rectangle:</legend> <!--Group box-->
+            <p>Enter the base and height, then press submit</p>
+            Width: &nbsp;&nbsp;<input type="text" id="rBase"><br>
+            Length: <input type="text" id="rHeight"><br>
+            <input type="button" value="Calculate Area" onclick="CalcArea(4)" class="button"><br>
+            Area: <span id="recArea"></span>
+            <canvas width="150px" height="150" id="recCanvas"></canvas>
+        </fieldset>
+
+        <fieldset>
+            <legend>Triangle:</legend> <!--Group box-->
+            <p>Enter the base and height, then press submit</p>
+            Base: &nbsp;&nbsp;&nbsp;<input type="text" id="tBase"><br>
+            Height: <input type="text" id="tHeight"><br>
+            <input type="button" value="Calculate Area" onclick="CalcArea(3)"class="button"><br>
+            Area: <span id="triArea"></span>
+            <canvas width="150px" height="150" id="triCanvas"></canvas>
+        </fieldset>
+    </form>
+</body>
+<script src="AReaCalc.js"></script> <!--connecting to our external JS-->
+
+</html>

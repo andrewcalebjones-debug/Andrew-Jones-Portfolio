@@ -1,0 +1,79 @@
+:root {
+    --dark-blue: #1b47b4;      /* Column 1 */
+    --medium-blue: #4071e2;    /* Column 2 */
+    --light-blue: #8ca3eb;     /* Column 3 */
+    --dark-gold: #b38c1c;      /* Column 4 */
+    --medium-gold: #e2b940;    /* Column 5 */
+    --light-gold: #e9d18b;     /* Column 6 */
+    --text-dark: #222;
+    --bg-light: #f9f9f9;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+h1 {
+    color: var(--dark-blue);
+    font-size: 3rem;
+    line-height: 1.1;
+    border-left: 8px solid var(--medium-gold);
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Navigation List Styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--medium-blue);
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    background-color: white;
+    border: 1px solid var(--light-blue);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+a:hover {
+    background-color: var(--medium-gold);
+    color: white;
+    border-color: var(--dark-gold);
+    transform: translateX(10px);
+}
+
+/* Instruction text at the bottom */
+body > p:last-of-type {
+    margin-top: 50px;
+    padding: 15px;
+    background-color: var(--light-gold);
+    color: var(--dark-gold);
+    font-style: normal;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    text-align: center;
+}

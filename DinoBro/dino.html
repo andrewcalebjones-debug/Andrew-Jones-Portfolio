@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="dino.css">
+</head>
+
+<body>
+    <div id="withGround">
+        <div id="container">
+            <div id="leftVeil"></div>
+            <div id="game">
+                <div id="scoreboard">
+                    <label for="playerName" id="nameLabel">Your name:</label>
+                    <input type="text" id="playerName" value="(enter your name)"></input>
+                    <div id="timer">Timer:</div>
+                </div>
+                <img src="Images/dinoIdle1.png" id="Player">
+                <img src="Images/cactus.png" id="cactus">
+                <img src="Images/UFO.png" id="bird">
+                <img src="Images/rock.png" id=rock>
+            </div>
+            <div id="rightVeil"></div>
+        </div>
+        <div id="ground">
+            <div id="groundLeft"></div>
+            <div id="groundMiddle">
+                <input type="button" id="startPrompt" value="Click here to Start" onclick="startGame()"></input>
+                Well hey there :)
+            </div>
+            <div id="groundRight"></div>
+        </div>
+    </div>
+    <div id="instructions">
+        <h1>Instructions:</h1>
+        <p>Press <b>"spacebar" to jump</b> over obsticles and <b>"s" to crouch</b> under them. Se how long you can go!
+        </p>
+    </div>
+    <h1>High Score:</h1>
+    <div id="leaderBoard">
+
+    </div>
+</body>
+<script src="dino.js"></script>
+
+</html>

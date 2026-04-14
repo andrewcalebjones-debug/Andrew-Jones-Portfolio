@@ -1,0 +1,153 @@
+h1 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+
+}
+
+body {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+html {
+    background-color: tan;
+}
+
+#time {
+    font-size: x-large;
+    padding: 50px;
+    background-color: burlywood;
+    border-radius: 20px;
+    border-style: double;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.one {
+    color: aqua;
+    font-size: 24px;
+    transition: 1s;
+}
+
+.two {
+    color: aquamarine;
+    font-size: 25px;
+    transition: 1s;
+}
+
+.three {
+    color: rgb(127, 255, 144);
+    font-size: 26px;
+    transition: 1s;
+}
+
+.four {
+    color: rgb(255, 246, 127);
+    font-size: 27px;
+    transition: 1s;
+}
+
+.five {
+    color: rgb(255, 158, 78);
+    font-size: 28px;
+    transition: 1s;
+}
+
+.six {
+    color: rgb(255, 127, 127);
+    font-size: 29px;
+    transition: 1s;
+}
+
+.seven {
+    color: rgb(255, 127, 180);
+    font-size: 30px;
+    transition: 1s;
+}
+
+.eight {
+    color: rgb(214, 127, 255);
+    font-size: 31px;
+    transition: 1s;
+}
+
+.nine {
+    color: rgb(136, 127, 255);
+    font-size: 32px;
+    transition: 1s;
+}
+.zero {
+    color: rgb(0, 102, 255);
+    transition: 1s;
+}
+
+.time15 {
+    border-style: solid;
+    color: black;
+}
+
+.time30 {
+    border-style: outset;
+    color: aquamarine;
+}
+
+.time45 {
+    border-style: dashed;
+    color: black;
+}
+
+.time59 {
+    border-style: dotted;
+    color: black;
+}
+
+.background15 {
+    background-color: teal;
+}
+
+.background30 {
+    background-color: rgb(52, 173, 123); 
+}
+
+.background45 {
+    background-color: rgb(216, 147, 56);
+}
+
+.background59 {
+    background-color: tan;
+}
+
+.min15 {
+    color: aqua;
+}
+
+.min30 {
+    color: aquamarine;
+}
+
+.min45 {
+    color: rgb(216, 147, 56);
+}
+
+.min59 {
+    color: black;
+}
+
+.hr15 {
+    color: aqua;
+}
+
+.hr30 {
+    color: aquamarine;
+}
+
+.hr45 {
+    color: rgb(216, 147, 56);
+}
+
+.hr59 {
+    color: black;
+}
+
+#reaction {
+    font-size: 50px;
+}

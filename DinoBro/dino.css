@@ -1,0 +1,153 @@
+
+#withGround {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#game {
+    border-style: solid;
+    border-color: black;
+    height: 717px;
+    width: 1000px;
+    border-bottom: 0px;
+    position: relative;
+    z-index: 3;
+
+    flex-shrink: 0;
+}
+
+#leftVeil {
+    background-color: white;
+    height: 300px;
+    width: 300px;
+    border-right: 3px solid black;
+    position:relative;
+    z-index: 4;
+    display: flex;
+
+    margin-right: -3px;
+    top: 420px;
+}
+
+#rightVeil {
+    background-color: white;
+    height: 300px;
+    width: 300px;
+    border-left: 3px solid black;
+    position: relative;
+    z-index: 3;
+    display: flex;
+
+    margin-left: -3px;
+    top: 420px;
+}
+
+#groundMiddle {
+    border-style: solid;
+    border-color: black;
+    background-color: black;
+    height: 150px;
+    width: 1000px;
+    margin: auto;
+
+    flex-shrink: 0;
+}
+
+#groundRight {
+    width: 200px;
+    display: flex;
+    
+}
+
+#groundLeft {
+    width: 200px;
+    display: flex;
+    
+}
+
+#scoreboard {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-top: 5px;
+    font-family: sans-serif;
+}
+
+#timer {
+    padding: 10px;
+    font-size: 30px;
+}
+
+#highScore {
+    padding: 10px;
+    font-size: 30px;
+}
+
+#startPrompt {
+    display: block;
+    top: 650px;
+    left: 250px;
+}
+
+#playerName {
+    height: 50px;
+    width: 400px;
+    font-size: 30px;
+    margin-left: 10px;
+    color: rgb(120, 87, 238);
+}
+
+#nameLabel {
+    background-color: white;
+    width: 85px;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+#Player {
+    height: 70px;
+    width: 70px;
+    position: relative;
+    top: 514px;
+    left: 200px;
+    z-index: 1;
+}
+
+#cactus {
+    display: none;
+    width: 60px;
+    height: 150px;
+    position: relative;
+    left: 1060px;
+    top:360px;
+    z-index: 0;
+}
+
+#bird {
+    display: none;
+    width: 200px;
+    height: 160px;
+    position: relative;
+    left: 1050px;
+    top:285px;
+    z-index: 0;
+}
+
+#rock {
+    display: none;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 1030px;
+    top:410px;
+    z-index: 0;
+}
