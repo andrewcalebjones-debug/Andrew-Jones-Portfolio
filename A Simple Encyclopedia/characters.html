@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Ultimate Lego Ninjago Encyclopedia</title>
+        <link rel="icon" href="Images/TabIcon.ico">
+        <link rel="stylesheet" href="LightMode.css" id="pageStyle">
+        <link rel="stylesheet" href="Layout.css">
+    </head>
+    <style>
+        table tr td img {
+            height: 100px;
+        }
+
+        #CharactersImg {
+             width:700px;
+        }
+
+        #toggle {
+            position: fixed;
+            top: 5px;
+            right: 36px;
+            z-index: 1;
+        }
+    </style>
+    <body>
+        <input type="button" id="toggle" onclick="mode()" value="Dark">
+        <header>
+            <h1 href="index.html">The Ultimate Lego Ninjago Encyclopedia - Characters</h1>
+        </header>
+        <nav>
+            <div id="CharDrop">
+                <a href="characters.html">Characters</a> 
+                <div id="CharItems">
+                    <ul>
+                        <li><a href="kai.html">Kai</a></li>
+                        <li><a href="jay.html">Jay</a></li>
+                        <li><a href="cole.html">Cole</a></li>
+                        <li><a href="zane.html">Zane</a></li>
+                        <li><a href="lloyd.html">Lloyd</a></li>
+                        <li><a href="nya.html">Nya</a></li>
+                        <li><a href="SenseiWu.html">Sensei Wu</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="WepDrop">
+                <a href="weapons.html">Weapons</a>
+                <div id="WepItems">
+                    <ul>
+                        <li><a href="SwordOfFire.html">Sword of Fire</a></li>
+                        <li><a href="NunchucksOfLightning.html">Nunchucks of Lightning</a></li>
+                        <li><a href="ScytheOfQuakes.html">Scythe of Quakes</a></li>
+                        <li><a href="ShurikensOfIce.html">Shurikens of Ice</a></li>
+                        <li><a href="MegaWeapon.html">The Megaweapon</a></li>
+                        <li><a href="Technoblades.html">The Technoblades</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div><a href="locations.html">Locations</a></div>
+        </nav>
+        <main>
+            <img src="Images/Characters.jpg" id="CharactersImg">
+            <h2>The core group of ninja</h2>
+            <table>
+                <tr><th>Name</th><th>Element</th><th>Icon</th></tr>
+                <tr><td><a href="kai.html">Kai</a></td><td>Fire</td><td><img src="Images/FireSymb.png"></td></tr>
+                <tr><td><a href="jay.html">Jay</a></td><td>Lightning</td><td><img src="Images/LightningSymb.png"></td></tr>
+                <tr><td><a href="cole.html">Cole</a></td><td>Earth</td><td><img src="Images/EarthSymb.png"></td></tr>
+                <tr><td><a href="zane.html">Zane</a></td><td>Ice</td><td><img src="Images/IceSymb.png"></td></tr>
+                <tr><td><a href="lloyd.html">Lloyd</a></td><td>Energy?</td><td><img src="Images/GreenSymb.png"></td></tr>
+                <tr><td><a href="nya.html">Nya</a></td><td>Water</td><td><img src="Images/WaterSymb.png"></td></tr>
+                <tr><td><a href="SenseiWu.html">Sensei Wu</a></td><td>Creation and Destruction</td><td><img src="Images/SenseiSymb.png"></td></tr>
+            </table>
+            <p>This list has expanded greatly over the years. The first five were Kai, Jay, Cole, Zane, and Sensei Wu (who is more of a master than a ninja). There are many characters who team up with the ninja at certain points of the show, but these are the most important characters.</p>
+        </main>
+        <footer>
+            <p>Copyright Lego 2025, made by Andrew Jones</p>
+            <p><a href="index.html">Home Page </a><a href="#">Top of Page</a></p>
+        </footer>
+    </body>
+    <script>
+        function mode() {
+            var currentStyle=document.getElementById("pageStyle");
+            if (currentStyle.attributes.getNamedItem("href").value == "LightMode.css") {
+                currentStyle.attributes.getNamedItem("href").value = "DarkMode.css";
+                document.getElementById("toggle").value = "Light";
+            } else {
+                currentStyle.attributes.getNamedItem("href").value = "LightMode.css";
+                document.getElementById("toggle").value = "Dark";
+            }
+        }
+    </script>
+</html>

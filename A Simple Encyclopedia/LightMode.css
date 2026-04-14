@@ -1,0 +1,108 @@
+html {
+    background-color: rgb(89, 150, 89);
+}
+a {
+    text-decoration: none;
+    color:rgb(250, 247, 97)
+}
+
+a:visited {
+    color:rgb(206, 202, 5)
+}
+
+a:hover {
+    color: rgb(196, 247, 205);
+}
+
+header {
+    background-color: rgb(155, 250, 146);
+    border-style: double;
+    border-color: green;
+}
+
+nav {
+    background-color: rgb(89, 150, 89);
+    border-style: dotted;
+}
+
+nav div a {
+    border-style: double;
+    border-color: rgb(255, 251, 0);
+    background-color: rgb(89, 150, 89);
+    padding: 10px;
+}
+
+nav div ul li a {
+    border-style: none;
+    background: none;
+    list-style: none;
+    padding-bottom: 15px;
+}
+
+main {
+    background-color: rgb(155, 250, 146);
+    border-style: double;
+    border-color: green;
+}
+ main img {
+    border-style: groove;
+    border-width: 5px;
+    border-color: rgb(2, 88, 2);
+}
+
+footer {
+    background-color: rgb(66, 192, 17);
+    border-style: dotted;
+    border-color: green;
+    opacity: 75%;
+}
+
+table tr td {
+    background-color: rgb(89, 150, 89);
+    border-style: solid;
+    border-color: black;
+    font-size: 20px;
+}
+
+/*Classes and IDs*/
+#CharItems {
+    display: none;
+}
+
+#CharDrop {
+    height: 25px;
+}
+
+#CharDrop:hover #CharItems {
+    display: block;
+    background-color: rgb(89, 150, 89);
+    border-style: double;
+    border-color: rgb(255, 251, 0);
+    
+}
+
+#WepItems {
+    display: none;
+}
+
+#WepDrop {
+    height: 25px;
+}
+
+#WepDrop:hover #WepItems {
+    display: block;
+    background-color: rgb(89, 150, 89);
+    border-style: double;
+    border-color: rgb(255, 251, 0);
+}
+
+#toggle {
+    background: none;
+    color: rgb(255, 251, 0);
+    border-color: rgb(255, 251, 0);
+}
+
+#toggle:hover {
+    color: rgb(196, 247, 205);
+    border-color: rgb(196, 247, 205);
+}

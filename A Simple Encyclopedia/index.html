@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Ultimate Lego Ninjago Encyclopedia</title>
+        <link rel="stylesheet" href="LightMode.css" id="pageStyle">
+        <link rel="stylesheet" href="Layout.css">
+        <link rel="icon" href="Images/TabIcon.ico">
+        <style>
+            #toggle {
+                position: fixed;
+                top: 5px;
+                right: 36px;
+                z-index: 1;
+            }
+            #WhipVid {
+                margin: auto;
+                border-style: double;
+                border-width: 5px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <input type="button" id="toggle" onclick="mode()" value="Dark">
+        <header>
+            <h1 href>The Ultimate Lego Ninjago Encyclopedia</h1>
+        </header>
+        <nav>
+            <div id="CharDrop">
+                <a href="characters.html">Characters</a> 
+                <div id="CharItems">
+                    <ul>
+                        <li><a href="kai.html">Kai</a></li>
+                        <li><a href="jay.html">Jay</a></li>
+                        <li><a href="cole.html">Cole</a></li>
+                        <li><a href="zane.html">Zane</a></li>
+                        <li><a href="lloyd.html">Lloyd</a></li>
+                        <li><a href="nya.html">Nya</a></li>
+                        <li><a href="SenseiWu.html">Sensei Wu</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="WepDrop">
+                <a href="weapons.html">Weapons</a>
+                <div id="WepItems">
+                    <ul>
+                        <li><a href="SwordOfFire.html">Sword of Fire</a></li>
+                        <li><a href="NunchucksOfLightning.html">Nunchucks of Lightning</a></li>
+                        <li><a href="ScytheOfQuakes.html">Scythe of Quakes</a></li>
+                        <li><a href="ShurikensOfIce.html">Shurikens of Ice</a></li>
+                        <li><a href="MegaWeapon.html">The Megaweapon</a></li>
+                        <li><a href="Technoblades.html">The Technoblades</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div><a href="locations.html">Locations</a></div>
+        </nav>
+        <main>
+            <img width="700px" src="Images/ShowImage.jpg">
+            <h2>Summary:</h2>
+            <p>Lego Ninjago is a children's television show that first aired on Cartoon Network in 2011. In the main series, there are 10 seasons but there have been two reboot-like series airing on Netflix (Crystalized and Dragon's Rising). It follows a close knit group of ninjas who use their elemental powers to stop the forces of evil. Along the way, they encounter many emotional revelations about themselves and discover their "true potential" which allows them to use their powers being unhampered by their pasts.</p>
+            <p>The first seasons revolve around the legendary Green Ninja who is destined to defeat the dark lord, Garmadon. Each ninja thinks it is himself for one reason or another but it is eventually revealed to be Lloyd, Garmadon's own son. Lloyd is trained as the Green Ninja until the climax of season 2 where Lloyd defeats his overlord possesed father as the Ultimate Spinjitzu Master. Garmadon is released from his darkness and becomes a sensei himself.</p>
+            <p>After the final battle, the ninja become mere school teachers eager for another adventure. In season 3: Rebooted, the ninja embark on an unexpected fieldtrip of borg industries, the building erected on the ground of the final battle as a symbol of prgress and perseverance. During their tour, they discover that the overlord is alive and is living in the network. Cyrus Borg, the visionary behind New Ninjago City, gives the ninja the Technoblades and tells them to reboot the system (turning it off and on again lol). At the end of teh season, the overlord escapes and wreaks havoc on New Ninjago City. In the climax, Zane sacrifices himself to defeat the Overlord and is presumed dead.</p>
+            <p>In season 4: The Tournement of Elements, the ninja have parted ways and are living very sifferent lives from each other. Cole works as a lumberjack, Jay is a gameshow host, Kai fights as a pro wrestler, and Lloyd helps Borg shore up his defenses (risk management lol). They each mourn Zane in their own way but they are all running from the grief. Lloyd seeks the other three out to reignite their brotherhood. They meet at Mater Chen's noodle house, a popular chain for any noodle-loving ninja. When their discussion is over, they sneak into the back alley and find a secret note. It tells the ninja that if they ever want to see their friend again to meet at the port the following night. They meet at the port and are barged to Chen's Island for the tournement of elements. It turns out to be a front for Chen to steal everyone's powers. Partway through the tournement, Cole is eliminated and finds Zane in the catacombs of the Island. The season ends with Chen attacking Ninjago with the acquired powers from the elemental masters and Garmadon, a former pupil of Chen's, sacrificing himself to banish Chen to the cursed realm</p>
+            <h2>Other seasons Include:</h2>
+            <ul>
+                <li>Season 5: Possesion</li>
+                <li>Season 6: Skybound</li>
+                <li>Day of the Departed special</li>
+                <li>Season 7: The Hands of Time</li>
+                <li>Season 8: Sons of Garmadon</li>
+                <li>Season 9: Hunted</li>
+                <li>Season 10: March of the Oni</li>
+            </ul>
+            <h2>Music</h2>
+            <p>The most notable music from Lego Ninjago are the title themes. The video below is the official music video for 'Weekend Whip' by the Fold:</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TMw9UNXVDG0?si=z8P_JvGb8RRXB6Ep" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="WhipVid"></iframe>
+        </main>
+        <footer>
+            <p>Copyright Lego 2025, made by Andrew Jones</p>
+            <p><a href="index.html">Home Page </a><a href="#">Top of Page</a></p>
+        </footer>
+    </body>
+    <script>
+        function mode() {
+            var currentStyle=document.getElementById("pageStyle");
+            if (currentStyle.attributes.getNamedItem("href").value == "LightMode.css") {
+                currentStyle.attributes.getNamedItem("href").value = "DarkMode.css";
+                document.getElementById("toggle").value = "Light";
+            } else {
+                currentStyle.attributes.getNamedItem("href").value = "LightMode.css";
+                document.getElementById("toggle").value = "Dark";
+            }
+        }
+    </script>
+</html>
