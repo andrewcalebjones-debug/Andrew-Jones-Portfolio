@@ -77,3 +77,12 @@ body > p:last-of-type {
     border-radius: 4px;
     text-align: center;
 }
+
+.itemDesc {
+    margin-left: 25px;       /* Indents the text further than the link */
+    font-size: 0.95rem;      /* Shrinks the text slightly */
+    color: #777;             /* Grays out the text so it "pops" less */
+    margin-top: -8px;        /* Pulls it closer to the link above it */
+    margin-bottom: 20px;     /* Adds space before the next link starts */
+    list-style-type: none;   /* Ensures no bullet points appear */
+}
